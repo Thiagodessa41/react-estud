@@ -9,13 +9,13 @@ class App extends Component {
       {
       nome:'João',
       email:'joao@mail.com',
-      data: new Date(2020, 3, 19),
+      data: new Date(2020, 3, 19, 17, 30, 0),
       mensagem: 'Olá, tudo bem?'
       },
       {
         nome:'Pedro',
         email:'Pedro@mail.com',
-        data: new Date(2020, 3, 20),
+        data: new Date(2020, 3, 19, 17, 30, 0),
         mensagem: 'Olá, tudo bem sim...'
         }
     ],
@@ -67,7 +67,7 @@ class App extends Component {
             <input
               type="text"
               name="nome"
-              value={this.state.novoComentario.nome}
+            value={this.state.novoComentario.nome}
               onChange={this.digitacao}
               required
               placeholder='Digite seu nome'/>
@@ -81,8 +81,8 @@ class App extends Component {
               required
               placeholder='Digite seu email'/>
           </div>
-          <div>
-            <textarea
+      <div>
+        <textarea
               name="mensagem"
               value={this.state.novoComentario.mensagem}
               onChange={this.digitacao}
